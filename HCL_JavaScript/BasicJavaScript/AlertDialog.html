@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./additionFunction.js"></script>
+    <script>
+        console.log('Welcome to JavaScript Programming');
+        function displayDialog()// act as an event handler 
+        {
+            alert('Welcome to JavaScript Programming');
+        }
+
+    </script>
+</head>
+<body>
+    <p onclick="displayDialog()">I would be visible after Head Section is loaded</p>
+    <form>
+        Enter 1<sup>st</sup> Number <input type="text" id="number1"><br>
+        Enter 2<sup>nd</sup> Number <input type="text" id="number2"><br>
+        <input type="button" onclick="add()" value="Add Numbers">
+    </form>
+
+</body>
+</html>
