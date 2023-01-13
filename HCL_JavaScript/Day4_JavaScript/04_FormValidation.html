@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./04_FormValidation.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>Registration Form</h1>
+        <div id="error"></div>
+        <form name="f1" action="#" onsubmit="validate(); return false;" >
+            Enter Your Name<input type="text" name="name" required><br><br>
+            Enter Your email<input type="text" name="email" required><br><br>
+            Enter Your Mobile<input type="text" name="mobile" required><br><br>
+            Enter Your Address<textarea rows="5" cols="10" required name="address"></textarea><br><br>
+            Select Gender<input type="radio" name="gender" value="Female" checked>Female
+            <input type="radio" name="gender" value="Male">Male<br><br>
+
+            Select Country You Live In<select name="country">
+                <option selected>--Select Country</option>
+                <option>India</option>
+                <option>Bhutan</option>
+                <option>SriLanka</option>
+                <option>England</option>
+                <option>South Africa</option>
+            </select><br><br>
+
+            Select Programming Languages You Know
+            <input type="checkbox" name="language" value="Java" checked>Java
+            <input type="checkbox" name="language" value="C#">C#
+            <input type="checkbox" name="language" value=".Net">.Net
+            <input type="checkbox" name="language" value="React">ReactJS<br><br>
+            <input type="submit" name="language" value="Register" ><input type="reset" value="Clear Form">
+        </form>
+    </center>
+</body>
+
+</html>

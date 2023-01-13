@@ -15,3 +15,4 @@ function getCompletedTasks()
     .then((data)=>d.innerHTML=JSON.stringify(data));
    // .then((data)=>console.log(data));
 }
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./01_DomNaviagtion.js"></script>
+</head>
+<body style="align-content: center;">
+    <div style="border:2px solid grey" width="300px" height="300px">
+    <form name="loginForm">
+        Enter Id<input type="text" name="loginId"><br>
+        Enter Password<input type="password" name="password"><br>
+        <input type="submit" value="Login In">
+    </form>
+</div>
+<div style="border:2px solid grey; align-content: center;" width="300px" height="300px">
+    <form name="registrationForm">
+        Enter Id<input type="text" name="loginId" id="lid"><br>
+        Enter Password<input type="password" name="password" id="pwd"><br>
+        Enter Confirm Password<input type="password" name="confirmPassword" id="cpwd"><br>
+        Enter Email<input type="email" name="email" id="email"><br>
+        <input type="button" value="Login In" onclick="submitForm()">
+    </form>
+    </div>
+    <div>
+        <p class="odd">I am Para 1 </p>
+        <p class="even">I am Para 2 </p>
+        <p class="odd">I am Para 3 </p>
+        <p class="even">I am Para 4 </p>
+        <p class="odd">I am Para 5 </p>
+        <p class="even">I am Para 6 </p>
+    </div>
+    <script>init()</script>
+</body>
+</html>
