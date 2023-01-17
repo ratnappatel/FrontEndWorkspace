@@ -19,6 +19,7 @@ function getData()
             document.write("<li>"+p.desc+"</li>");
             document.write("<li>"+p.price+"</li>");
             document.write("<li>"+p.Rating+"</li></ul>");
+            document.write("Add Comment <input type=text name='comment>")
             document.write("<hr height=2")
         })
     })
