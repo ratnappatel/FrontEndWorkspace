@@ -24,7 +24,7 @@ function printTable(data)
         table+="<td>"+data[i].id+"</td>";
         table+="<td>"+data[i].name+"</td>";
         table+="<td>"+data[i].marks+"</td>";
-        table+="<td><a href=''>Edit</a></td>";
+        table+="<td><a href='http://localhost:3004/students/"+data[i].id+"'>Edit</a></td>";
         table+="<td><a href=''>Delete</a></td>";
         table+="</tr>";
     }
@@ -43,6 +43,6 @@ function addStudent()
         },
         body: JSON.stringify()
     });
-    window.location.replace('http://127.0.0.1:5500/Week9-Day4Examples/index.html');
+    window.location='http://127.0.0.1:5500/Week9-Day4Examples/index.html';
 }
 getStudents();
