@@ -5,6 +5,7 @@ export const CricketersChild = (props) => {
     <div>
         <table border="5px">
             <tr><th>Cricketr</th><th>Score</th></tr>
+            <tbody>
             {props.list.map((c)=>{
                 return (
                             <tr key={c.name}>
@@ -13,6 +14,7 @@ export const CricketersChild = (props) => {
                             </tr>
                         );
             })}
+            </tbody>
         </table>
     </div>
   )
