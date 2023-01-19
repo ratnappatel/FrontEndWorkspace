@@ -1,0 +1,14 @@
+#emp {
+  display: block;
+  width: 300px;
+  height: 400px;
+  border: 2px solid blue;
+}
+
+img {
+  width: 300px;
+  height: 250px;
+}
+table{
+  border: 5px;
+}
