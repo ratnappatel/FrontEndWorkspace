@@ -8,7 +8,7 @@ export default class Counter extends Component {
          "count":100
       }
        this.handleIncrement=this.handleIncrement.bind(this);
-      this.handleDecrement=this.handleDecrement.bind(this);
+       this.handleDecrement=this.handleDecrement.bind(this);
     }
     handleIncrement()
     {
@@ -26,7 +26,7 @@ export default class Counter extends Component {
     return (
       <div>
         <h2>{this.state.count}</h2>
-        <input type="button" value="Increament" onClick={this.handleIncrement}/>
+        <input type="button" value="Increament" onClick={this.handleIncrement}/> 
         <input type="button" value="Decrement" onClick={this.handleDecrement}/>
       </div>
     )
