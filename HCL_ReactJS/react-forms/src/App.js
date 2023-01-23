@@ -1,18 +1,16 @@
 
 import './App.css';
-import BasicForm from './forms/BasicForm';
-import RegistrationForm from './forms/RegistrationForm';
+//import BasicForm from './forms/BasicForm';
+//import RegistrationForm from './forms/RegistrationForm';
+import SubscriptionForm from './forms/SubscriptionForm';
 
 function App() {
-
-    
-
-
   return (
     <div>
-      <BasicForm/>
+     {/*  <BasicForm/>
       <hr></hr>
-      <RegistrationForm/>
+      <RegistrationForm/> */}
+      <SubscriptionForm/>
     </div>
   );
 }
