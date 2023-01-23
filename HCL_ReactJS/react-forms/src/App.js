@@ -1,11 +1,12 @@
 
 import './App.css';
-import BasicForm from './forms/BasicForm';
-import BasicUForm from './forms/BasicUForm';
+//import BasicForm from './forms/BasicForm';
+//import BasicUForm from './forms/BasicUForm';
+import BasicFormValidation from './forms/formValidation/BasicFormValidation';
 //import BasicForm from './forms/BasicForm';
 //import RegistrationForm from './forms/RegistrationForm';
 //import SubscriptionForm from './forms/SubscriptionForm';
-import MultipleCheckBox from './forms/MultipleCheckBox';
+//import MultipleCheckBox from './forms/MultipleCheckBox';
 
 function App() {
   return (
@@ -14,10 +15,11 @@ function App() {
       <hr></hr>
       <RegistrationForm/> 
       <SubscriptionForm/>
-       <MultipleCheckBox/>*/}
+       <MultipleCheckBox/>
        <BasicUForm/>
        <hr></hr>
-       <BasicForm/>
+       <BasicForm/>*/}
+       <BasicFormValidation/>
      
       
     </div>
