@@ -3,7 +3,7 @@ import './App.css';
 //import BasicForm from './forms/BasicForm';
 //import RegistrationForm from './forms/RegistrationForm';
 //import SubscriptionForm from './forms/SubscriptionForm';
-import MultipleCheckBox from './MultipleCheckBox';
+import MultipleCheckBox from './forms/MultipleCheckBox';
 
 function App() {
   return (
