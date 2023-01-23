@@ -16,7 +16,10 @@ export default class BasicForm extends Component {
           <fieldset>
             <label>Enter Your Name</label>
             <input name="name" value={this.state.name} required
-            onChange={e=>this.setState({name: e.target.value})}/>
+            onChange={e=>{
+              this.setState({name: e.target.value});
+              console.log(this.state.name);
+              }}/>
           </fieldset>
           <button type="submit" >Submit</button>
         </form>
