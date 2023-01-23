@@ -1,26 +1,34 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {
-    BrowserRouter as Router,
-    Swict,
+    Routes,
     Route,
     Link,
-    useParams,
-    useRouteMatch
-} from 'react-router-dom';
+    useMatch
+  } from "react-router-dom";
+import ProductDetails from './ProductDetails';
 
 function ProductList() {
-let {path, url} =useRouteMatch();
+let {path, url} =useMatch();
 
   return (
     <div>
         <h2>List of Electronic Produicts</h2>
         <ul>
-            <li><Link to="{`${url}/wm`}">Washing Machine</Link></li>
+            <li><Link to={`${url}/washingmachine`}>Washing Machine</Link></li>
+            <li><Link to={`${url}/refridgerator`}>Refridgerator</Link></li>
+            <li><Link to={`${url}/HomeTheatre`}>Home Theatre</Link></li>
         </ul>
-    </div>
 
+        <Routes>
+            <Route exact path={path}>
+            <h3>Please select a Category.</h3>
+            </Route>
+            <Route path={`${path}/:pid`}>
+            <ProductDetails />
+            </Route>
+      </Routes>
+    </div>
   )
 }
 
-export default ProductList
+export default ProductList;
