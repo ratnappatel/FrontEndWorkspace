@@ -13,13 +13,13 @@ export default class AddEmployee extends Component {
          }
     }
 
-    handleChange=(e)=>{
+   /*  handleChange=(e)=>{
         var controlName=e.target.name;
         let value=e.target.value;
         this.setState({
             controlName :value
         });
-    }
+    } */
     handleSubmit=(e)=>{
         e.preventDefault();
         addEmployee(this.state);
@@ -35,22 +35,22 @@ export default class AddEmployee extends Component {
             <fieldset>
                 <label>Enter Employee ID</label>
                 <input type="text" name="id" 
-                 onChange={this.handleChange}></input>
+                 onChange={e=>{this.setState({id: e.target.value});}}></input>
             </fieldset>
             <fieldset>
                 <label>Enter Employee Name</label>
                 <input type="text" name="name"
-                 onChange={this.handleChange}></input>
+                 onChange={e=>{this.setState({name: e.target.value});}}></input>
             </fieldset>
             <fieldset>
                 <label>Enter Employee Designation</label>
                 <input type="text" name="desig" 
-                 onChange={this.handleChange}></input>
+                 onChange={e=>{this.setState({desig: e.target.value});}}></input>
             </fieldset>
             <fieldset>
                 <label>Enter Employee Salary</label>
                 <input type="text" name="salary" 
-                 onChange={this.handleChange}></input>
+                 onChange={e=>{this.setState({salary: e.target.value});}}></input>
             </fieldset>
             <button type="Submit">Add Employee</button>
 

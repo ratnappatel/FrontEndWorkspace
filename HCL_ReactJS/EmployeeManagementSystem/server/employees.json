@@ -11,7 +11,12 @@
       "name": "Gargesh",
       "desig": "ML-Engineer",
       "salary": 250000
+    },
+    {
+      "id": "103",
+      "name": "Varni",
+      "desig": "CEO",
+      "salary": "250000"
     }
-   
   ]
 }
