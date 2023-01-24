@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function EmployeeTable(props) {
   return (
@@ -13,8 +14,12 @@ function EmployeeTable(props) {
                 <td>{e.name}</td>
                 <td>{e.desig}</td>
                 <td>{e.salary}</td>
-                <td>Edit</td>
-                <td>Delete</td>
+                <td>
+                  <Link to={`/edit/${e.id}`}>
+                  Edit
+                  </Link>
+                </td>
+                <td><Link to={`/delete/${e.id}`}>Delete</Link></td>
             </tr>)
         })}
         </tbody>

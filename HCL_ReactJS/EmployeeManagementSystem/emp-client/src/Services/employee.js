@@ -10,3 +10,12 @@ export const addEmployee=(data)=>
 {
     return http.post("/employees",data);
 }
+
+export const getEmployeeDetails=(id)=>{
+    return http.get("/employees/"+id);
+}
+
+export const updateEmployeeDetails=(id, employee)=>
+{
+    return http.put("/employees/"+id,employee);
+}

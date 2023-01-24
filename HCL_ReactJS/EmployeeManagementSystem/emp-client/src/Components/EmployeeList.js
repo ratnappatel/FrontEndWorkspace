@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import  { getAllEmployee } from '../Services/employee';
-import AddEmployee from './AddEmployee';
+import { Link } from 'react-router-dom';
 import EmployeeTable from './EmployeeTable';
 
 export default class EmployeeList extends Component {
@@ -26,8 +26,8 @@ export default class EmployeeList extends Component {
        
         <h1>Employees List</h1>
         <EmployeeTable emps={this.state.employees}/> 
-        <AddEmployee/>
-        
+        <Link to="/add">
+        <button>Add Employee</button></Link>
       </div>
     )
   }
