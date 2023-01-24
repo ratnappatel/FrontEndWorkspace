@@ -11,29 +11,7 @@
       "name": "Gargesh",
       "desig": "ML-Engineer",
       "salary": 250000
-    },
-    {
-      "id": 103
-    },
-    {
-      "id": 104,
-      "name": "",
-      "desig": "",
-      "salary": 0
-    },
-    {
-      "id": 105,
-      "name": "",
-      "desig": "",
-      "salary": 0,
-      "controlName": "2500000"
-    },
-    {
-      "id": 106,
-      "name": "",
-      "desig": "",
-      "salary": 0,
-      "controlName": "124"
     }
+   
   ]
 }
