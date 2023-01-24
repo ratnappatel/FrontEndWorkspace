@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.1",
+    "react-router-dom": "^6.7.0"
+  }
+}
