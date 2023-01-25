@@ -26,7 +26,9 @@ import withRouter from './withRouter';
     }
     handleSubmit=(e)=>{
       e.preventDefault();
-      update(this.state.id, this.state);
+      update(this.state.employee.id, this.state).then(res=>{
+        console.log(res.data);
+      });
       
     }
   render() {
@@ -40,17 +42,17 @@ import withRouter from './withRouter';
             </fieldset>
             <fieldset>
                 <label>Enter Employee Name</label>
-                <input type="text" id="name" name="name" defaultValue={this.state.employee.name}
+                <input type="text" id="name" name="name" value={this.state.employee.name}
                  onChange={e=>{this.setState({name: e.target.value});}}></input>
             </fieldset>
             <fieldset>
                 <label>Enter Employee Designation</label>
-                <input type="text" id="desig" name="desig"  defaultValue={this.state.employee.desig}
+                <input type="text" id="desig" name="desig" value={this.state.employee.desig}
                  onChange={e=>{this.setState({desig: e.target.value});}}></input>
             </fieldset>
             <fieldset>
                 <label>Enter Employee Salary</label>
-                <input type="text" id="salary" name="salary" defaultValue={this.state.employee.salary}
+                <input type="text" id="salary" name="salary" value={this.state.employee.salary}
                  onChange={e=>{this.setState({salary: e.target.value});}}></input>
             </fieldset>
             <button type="Submit">Update Employee</button>
