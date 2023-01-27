@@ -15,12 +15,11 @@ export default class LoginPage extends Component {
         let {isLoggedIn} = this.state;
 
         const renderAuthButton = () => {
-          if (isLoggedIn) {
+          if (isLoggedIn) 
             return <button>Logout</button>;
-          } else {
+          else 
             return <button>Login</button>;
-          }
-        }
+         }
     
         return (
           <div className="App">

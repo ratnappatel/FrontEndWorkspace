@@ -1,11 +1,17 @@
 
 import './App.css';
-import LoginPage from './Components.js/LoginPage';
+import LoggedStatus from './Components.js/InlineIf/LoggedStatus';
+//import SwitchDemo from './Components.js/SwitchDemo';
+//import TernaryDemo from './Components.js/TernaryDemo';
+//import LoginPage from './Components.js/LoginPage';
 
 function App() {
   return (
     <div>
-      <LoginPage/>
+      {/* <LoginPage/> 
+      <TernaryDemo/>
+      <SwitchDemo/>*/}
+      <LoggedStatus isLoggedIn={false}/>
     </div>
   );
 }
