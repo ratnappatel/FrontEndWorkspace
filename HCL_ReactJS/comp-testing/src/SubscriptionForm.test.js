@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Renderer } from 'react-test-renderer';
+import TestRenderer from 'react-test-renderer';
 import SubscriptionForm from './SubscriptionForm';
 
 
@@ -17,7 +17,7 @@ it('The Subscribe Button becomes enabled when onChange event occured..',()=>{
 })
 
 it('Test to match snapshot of component',()=>{
-    const subFormTree= Renderer.create(<SubscriptionForm/>).toJSON();
+    const subFormTree= TestRenderer.create(<SubscriptionForm/>).toJSON();
 
     expect(subFormTree).toMatchSnapshot();
 })
